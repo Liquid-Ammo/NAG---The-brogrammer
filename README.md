@@ -7,6 +7,6 @@ This is a independent work and other programmers are invited to develope more ov
 
 Thank you
 
-Lalith Adhithiya Saravanan
-Rishikesh Renjit
-Arjun Rajagopal
+Lalith Adhithiya Saravanan \n
+Rishikesh Renjit \n
+Arjun Rajagopal \n
