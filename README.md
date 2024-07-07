@@ -1,5 +1,5 @@
 # NAG --- The-brogramming-Language
-Python based programming language compiled on python for easier access to non prgrammers.
+Python based sql like language compiled on python as an alternative for sql made for easier access to python prgrammers.
 
 
 This project is developed by Lalith Adhithiya , Rishikesh , Arjun of Class 12 A and B Indian Educational School Kuwait as a CBSE grade 12 Computer Science Project.
