@@ -23,6 +23,6 @@ ABSTRACT :
 > The project also aims to provide users with interactive mode and script mode.
 
 Team Membes :
-> Lalith Adhithiya Saravanan
+> Lalith Adhithiya Saravanan |
 > Rishikesh Renjit
 > Arjun Rajagopal
