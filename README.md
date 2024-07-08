@@ -24,5 +24,5 @@ ABSTRACT :
 
 Team Membes :
 > Lalith Adhithiya Saravanan |
-> Rishikesh Renjit
+> Rishikesh Renjit |
 > Arjun Rajagopal
