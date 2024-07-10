@@ -42,4 +42,65 @@ def create_table(name):
     bq.writerow(column_name)
     aq.close()
 
-  return column_name, column_datatype, column_key
+  a = [column_name, column_datatype, column_key]
+  file = open("csv_data//csvdata.csv", "a+")
+  wri = csv.writer(file)    
+  wri.writerow([name,list(a[0]), list(a[1]), list(a[2])])
+  file.close()
+  file = open("csv_data//tables.csv", "a+")
+  wri = csv.writer(file)
+  wri.writerow([name])
+  file.close()
+
+
+
+
+def var_assign(var , b) :
+
+  var_error = True
+  expression = ""
+  for i in b[1:]:
+    expression += i.strip()
+
+  variable, value = expression.split("=")
+
+  if variable[0] not in ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]:
+    for i in variable:
+      var_error = True
+      if i.isalpha() or i.isdigit() or i == "_":
+        var_error = False
+  else:
+    var_error = True
+
+  if not var_error:
+
+    if (value[0] == '\"' and value[-1] == '\"') or (value[0] == '\'' and value[-1] == '\''):
+      var[variable] = str(value[1:-1])
+
+    elif value.isdigit():
+      var[variable] = int(value)
+
+    elif value == "True":
+      value = True
+      var[variable] = value
+
+    elif value == "False":
+      value = False
+      var[variable] = value
+
+    elif value.split(".")[0].isdigit() and value.split(".")[1].isdigit():
+      var[variable] = float(value)
+
+    else:
+      print("Error: Invalid Value")
+
+  else:
+    print("Error: Invalid Variable Name")
+
+
+def show_tables():
+  import csv
+  a = open ( "csv_data//tables.csv" , "r" )
+  wri = csv.reader(a)
+  for i in wri:
+    print(i[0])
