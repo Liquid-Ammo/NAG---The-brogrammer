@@ -9,7 +9,7 @@ var = {}
 while True:
 
   a = str(input(">>> "))
-  a.strip()
+  a = a.strip()
   b = a.split(" ")
 
   if b[0] == "let":
