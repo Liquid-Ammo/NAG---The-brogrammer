@@ -17,18 +17,19 @@ def create_table(name):
 
       if b[0] not in column_name:
         column_name.append(b[0])
+        column_datatype.append(b[1])
+        column_key.append(False)
+
       else:
         print("Error: Repeated Attribute Name")
 
-      column_datatype.append(b[1])
-      column_key.append(False)
-
     elif len(b) == 3:
-      column_name.append(b[0])
-      column_datatype.append(b[1])
 
       if b[2] == "primary":
         column_key.append(True)
+        column_name.append(b[0])
+        column_datatype.append(b[1])
+
       else:
         print("Error: Invalid Key")
 
@@ -37,10 +38,10 @@ def create_table(name):
 
     z = "csv_data//" + name + ".csv"
 
-    aq = open(z, "w")
-    bq = csv.writer(aq)
-    bq.writerow(column_name)
-    aq.close()
+  aq = open(z, "w")
+  bq = csv.writer(aq)
+  bq.writerow(column_name)
+  aq.close()
 
   a = [column_name, column_datatype, column_key]
   file = open("csv_data//csvdata.csv", "a+")
@@ -59,30 +60,37 @@ def var_assign(var , b) :
 
   var_error = True
   expression = ""
+
   for i in b[1:]:
     expression += i.strip()
 
   variable, value = expression.split("=")
 
   if variable[0] not in ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]:
+
     for i in variable:
       var_error = True
+
       if i.isalpha() or i.isdigit() or i == "_":
         var_error = False
   else:
     var_error = True
 
   if not var_error:
-
+    
+    valuex= value[1::]
+    
     if (value[0] == '\"' and value[-1] == '\"') or (value[0] == '\'' and value[-1] == '\''):
-      print(value,type(value))
       var[variable] = str(value[1:-1])
-
+      
     elif value.isdigit():
       var[variable] = int(value)
 
-    elif value[0] == "-" and value[1:-1].isdigit():
+    elif value[0] == "-" and valuex.isdigit():
       var[variable] = int(value)
+
+    elif value[0] == "-" and ( valuex.split(".")[0].isdigit() and valuex.split(".")[1].isdigit() ):
+      var[variable] = float(value)
 
     elif value == "True":
       value = True
