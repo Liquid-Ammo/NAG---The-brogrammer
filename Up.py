@@ -75,9 +75,13 @@ def var_assign(var , b) :
   if not var_error:
 
     if (value[0] == '\"' and value[-1] == '\"') or (value[0] == '\'' and value[-1] == '\''):
+      print(value,type(value))
       var[variable] = str(value[1:-1])
 
     elif value.isdigit():
+      var[variable] = int(value)
+
+    elif value[0] == "-" and value[1:-1].isdigit():
       var[variable] = int(value)
 
     elif value == "True":
