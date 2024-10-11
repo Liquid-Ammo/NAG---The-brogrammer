@@ -1,0 +1,8 @@
+[project]
+name = "repl-nix-nag-the-brogramming-language"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "mysql-connector-python>=9.0.0",
+]

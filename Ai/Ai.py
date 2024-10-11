@@ -2,8 +2,9 @@ import google.generativeai as genai
 import base64
 import json
 
+
 def chatbot():
-    
+
     # Set your API key
     API_KEY = "AIzaSyCpGakEZsf5MbEPH5keSnLQLwrDrnZcjTc"
 
@@ -21,9 +22,9 @@ def chatbot():
     safety_settings = json.loads(base64.b64decode(safety_settings_b64))
     user_input = base64.b64decode(user_input_b64).decode()
     stream = False
-    
+
     user_input = str(input(":"))
-    usr= "convert to Sql Query"+user_input
+    usr = "convert to Sql Query" + user_input
     gemini = genai.GenerativeModel(model_name=model)
     chat = gemini.start_chat(history=contents)
     response = chat.send_message(usr, stream=stream)

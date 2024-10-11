@@ -1,3 +1,5 @@
+import csv
+
 from Up import create_table, var_assign, show_tables
 
 import os

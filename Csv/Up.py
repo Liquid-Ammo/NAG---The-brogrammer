@@ -78,9 +78,8 @@ def var_assign(var, b):
 
         valuex = value[1::]
 
-        if (value[0] == '"' and value[-1] == '"') or (
-            value[0] == "'" and value[-1] == "'"
-        ):
+        if (value[0] == '"' and value[-1] == '"') or (value[0] == "'"
+                                                      and value[-1] == "'"):
             var[variable] = str(value[1:-1])
 
         elif value.isdigit():
@@ -89,9 +88,8 @@ def var_assign(var, b):
         elif value[0] == "-" and valuex.isdigit():
             var[variable] = int(value)
 
-        elif value[0] == "-" and (
-            valuex.split(".")[0].isdigit() and valuex.split(".")[1].isdigit()
-        ):
+        elif value[0] == "-" and (valuex.split(".")[0].isdigit()
+                                  and valuex.split(".")[1].isdigit()):
             var[variable] = float(value)
 
         elif value == "True":
