@@ -1,30 +1,30 @@
-# NAG --- The-brogramming-Language
-Python based sql like language compiled on python as an alternative for sql made for easier access to python prgrammers.
+**NAG: A Simplified SQL Compiler for Python**
+
+**INTRODUCTION**
+
+> NAG is a Python-based SQL language compiler designed to offer a more accessible and intuitive alternative to traditional SQL syntax for novice programmers. Developed by Lalith Adhithiya, Rishikesh Renjit, and Arjun Rajagopal, students from Class 12 A and B at Indian Educational School Kuwait, NAG aims to streamline the process of interacting with databases within Python environments.
+
+**KEY FEATURES**
+
+> **Simplified Syntax**: NAG employs a more natural language-based syntax, eliminating the need for complex SQL queries. This makes it easier for beginners to understand and use.
+> **Python Integration**: NAG seamlessly integrates with Python, allowing programmers to leverage the power of both languages within their applications.
+> **Gemini AI Integration**: The project utilizes Gemini AI to enhance its capabilities, potentially providing intelligent suggestions and optimizations.
+> **MySQL Compatibility**: NAG strives to be a near-perfect replica of MySQL syntax, ensuring compatibility with existing MySQL databases and tools.
 
 
-This project is developed by Lalith Adhithiya , Rishikesh , Arjun of Class 12 A and B Indian Educational School Kuwait as a CBSE grade 12 Computer Science Project.
-This is a independent work and other programmers are invited to develope more over our project if needed.
+**GOALS**
 
-Thank you
+> **Eliminate MySQL Syntax**: NAG aims to provide a more user-friendly alternative to traditional SQL syntax, making it easier for programmers to work with databases.
+> **Enhance Programming Experience**: By simplifying the database interaction process, NAG seeks to improve the overall programming experience, especially for those new to SQL.
+> **Promote Accessibility**: NAG's intuitive syntax and ease of use make it a valuable tool for a wider range of programmers, including those with limited SQL knowledge.
 
-Lalith Adhithiya Saravanan \n
-Rishikesh Renjit \n
-Arjun Rajagopal \n
+**TEAM MEMBERS**
 
+> Lalith Adhithiya Saravanan
+> Rishikesh Renjit
+> Arjun Rajagopal
+**Note**: This project is an independent endeavor, and other programmers are encouraged to contribute to its development and expansion.
 
+**CONCLUSION**
 
-ABSTRACT :
-> The project aims to elimiate the need for mysql server in python code to have a better optimized experience for programmers.
-> The project makes use of csv file handling and python programming language to create a seemless mysql like experince without the mysql server setup.
-> The project also aim to have 2 syntaxes :
-          1 . Easy syntax : for relatively new sql users.
-          2 . Normal syntax : for experienced sql users.
-> The project aims to be a perfect replica for mysql.
-> The project also aims to provide users with interactive mode and script mode.
-
-Team Membes :
-> Lalith Adhithiya Saravanan |
-> Rishikesh Renjit |
-> Arjun Rajagopal |
-
-
+> NAG represents a promising step towards making database interactions more accessible and efficient for Python programmers. By providing a simplified SQL syntax and leveraging the power of AI, NAG has the potential to significantly enhance the programming experience and lower the barrier of entry for those interested in working with databases.
