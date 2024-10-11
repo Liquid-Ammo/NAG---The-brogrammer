@@ -6,7 +6,7 @@ import json
 def chatbot(user_):
 
     # Set your API key
-    API_KEY = "AIzaSyCpGakEZsf5MbEPH5keSnLQLwrDrnZcjTc"
+    API_KEY = "AIzaSyBiuciyZ-EccvUHAzXdySrXII30IA8XwEk"
 
     # Configure the client library by providing your API key.
     genai.configure(api_key=API_KEY)
@@ -23,11 +23,13 @@ def chatbot(user_):
     user_input = base64.b64decode(user_input_b64).decode()
     stream = False
 
-    usr = "convert to Sql Query : \" " + user_ +" \"" + " : without any eplanation"
+    usr = 'convert to Sql Query : " ' + user_ + ' "' + " : without any eplanation"
     gemini = genai.GenerativeModel(model_name=model)
     chat = gemini.start_chat(history=contents)
     print(usr)
     response = chat.send_message(usr, stream=stream)
     print(response.text)
     response = response.text[6:-4:1]
+    if response[-1] == "ˋ":
+        response = response[0:-2:1]
     return response
