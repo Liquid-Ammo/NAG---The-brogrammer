@@ -7,22 +7,30 @@
 **KEY FEATURES**
 
 > **Simplified Syntax**: NAG employs a more natural language-based syntax, eliminating the need for complex SQL queries. This makes it easier for beginners to understand and use.
+
 > **Python Integration**: NAG seamlessly integrates with Python, allowing programmers to leverage the power of both languages within their applications.
+
 > **Gemini AI Integration**: The project utilizes Gemini AI to enhance its capabilities, potentially providing intelligent suggestions and optimizations.
+
 > **MySQL Compatibility**: NAG strives to be a near-perfect replica of MySQL syntax, ensuring compatibility with existing MySQL databases and tools.
 
 
 **GOALS**
 
 > **Eliminate MySQL Syntax**: NAG aims to provide a more user-friendly alternative to traditional SQL syntax, making it easier for programmers to work with databases.
+
 > **Enhance Programming Experience**: By simplifying the database interaction process, NAG seeks to improve the overall programming experience, especially for those new to SQL.
+
 > **Promote Accessibility**: NAG's intuitive syntax and ease of use make it a valuable tool for a wider range of programmers, including those with limited SQL knowledge.
 
 **TEAM MEMBERS**
 
 > Lalith Adhithiya Saravanan
+
 > Rishikesh Renjit
+
 > Arjun Rajagopal
+
 **Note**: This project is an independent endeavor, and other programmers are encouraged to contribute to its development and expansion.
 
 **CONCLUSION**
