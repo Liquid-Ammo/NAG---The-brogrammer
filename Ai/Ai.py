@@ -30,10 +30,10 @@ def chatbot(user_):
     response = chat.send_message(usr, stream=stream)
     print(response.text)
     response = response.text[6:-4:1]
-    res=''
+    res = ""
     for i in response:
         if i != "`":
-            res+=i
+            res += i
         else:
             break
 

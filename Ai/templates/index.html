@@ -28,8 +28,8 @@
       margin: 0 auto;
       letter-spacing: 0px;
       animation:
-      typing 3s steps(40, end),
-      blink-caret .75s step-end infinite;
+        typing 3s steps(40, end),
+        blink-caret .75s step-end infinite;
     }
 
     @keyframes typing {
@@ -80,21 +80,21 @@
     }
 
     .prompt {
-      color : rgb(2, 255, 2);
+      color: rgb(2, 255, 2);
       font-weight: 200;
-      line-height:0.9 ;
-    }
-    .statement {
-      margin-top: -15px;
-      color : white;
-      font-weight: 200;
+      line-height: 0.9;
     }
 
+    .statement {
+      margin-top: -15px;
+      color: white;
+      font-weight: 200;
+    }
   </style>
   <body>
     <h1>NAG : The Brogramming Language</h1>
     <div class="box" id="box">
-      <div id ="history">{% autoescape false %}{{his}}{% endautoescape %}</div> 
+      <div id="history">{% autoescape false %}{{his}}{% endautoescape %}</div>
       <form action="/input" method="POST">
         <label> >>> <input class="inp" id="inp" name="inp"></input>
         </label>
@@ -103,15 +103,12 @@
     </div>
   </body>
   <script>
-
     const form = document.querySelector('form');
-
     form.addEventListener('keypress', function(event) {
       if (event.keyCode === 13) {
         event.preventDefault();
         form.submit();
       }
     });
-
   </script>
-</html
+</html>
