@@ -30,6 +30,11 @@ def chatbot(user_):
     response = chat.send_message(usr, stream=stream)
     print(response.text)
     response = response.text[6:-4:1]
-    if response[-1] == "ˋ":
-        response = response[0:-2:1]
-    return response
+    res=''
+    for i in response:
+        if i != "`":
+            res+=i
+        else:
+            break
+
+    return res
