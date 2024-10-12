@@ -6,5 +6,5 @@ if con.is_connected():
 else:
   print('Connection Error')
 cursor = con.cursor()
-cursor.execute(a)
+cursor.execute()
 con.close()
