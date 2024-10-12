@@ -1,13 +1,12 @@
 def execute(a):
-    import mysql.connector as sql
-
-    con = sql.connect(host="localhost", user="root", passwd="root")
+    import mysql.connector as sqltor
+    con=sqltor.connect(host='localhost',user='root',passwd='root')
     if con.is_connected():
-        print("Connection Established")
+        print('Connection Secure')
     else:
-        print("Connection Error")
-    cursor = con.cursor()
+        print('Connection Error')
+    cursor=con.cursor()
     cursor.execute(a)
-    output= cursor.fetchall()
+    data=cursor.fetchall()
+    print(data)
     con.close()
-    return output
