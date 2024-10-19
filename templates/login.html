@@ -4,13 +4,59 @@
 	<head>
 		<meta charset="UTF-8">
 		<title> Login </title>
-		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">		 
 	</head>
+
+	<style>
+		body{
+			background-color: rgb(32, 32, 32);
+			font-family: Poppins, sans-serif;
+		}
+		h1 {
+		font-size: 50px;
+		font-family: Poppins, sans-serif;
+		max-width: fit-content;
+		margin-left: auto;
+		font-weight: 500;
+		margin-right: auto;
+		color: rgb(38, 255, 0);
+		overflow: hidden;
+		white-space: nowrap;
+		margin: 0 auto;
+    	}
+		.msg ,.bottom{
+		margin-top: 0px;
+		border: none;
+		padding-top: -10px;
+		padding: 30px;
+		color: #ffffff;
+		font-size: 14px;
+		outline: 0px;
+		font-size: 27px;
+		font-weight: 200;
+		width: 93%;
+		}
+
+		.textbox{
+			font-size: 30px;
+			background-color: rgb(56, 56, 56);
+			color: rgb(95, 180, 255);
+			border-radius: 10px;
+		}
+
+		.btn{
+			font-size: 30px;
+			background-color: rgb(56, 56, 56);
+			color: #0fff07;
+			border-radius: 10px;
+		}
+
+
+	</style>
 	<body></br></br></br></br></br>
 		<div align="center">
 		<div align="center" class="border">
 			<div class="header">
-				<h1 class="word">Login</h1>
+				<h1 class="word">NAG Terminal : Login</h1>
 			</div></br></br></br>
 			<h2 class="word">
 				<form action="/" method="post">
