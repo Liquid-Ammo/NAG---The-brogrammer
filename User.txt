@@ -1,0 +1,2 @@
+{'User': 'Rishi', 'Passwd': '1234', 'Databases': ['office']}
+{'User': 'Lalith', 'Passwd': '1234', 'Databases': ['school', 'DATABAS']}

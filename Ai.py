@@ -23,7 +23,7 @@ def chatbot(user_):
     user_input = base64.b64decode(user_input_b64).decode()
     stream = False
 
-    usr = 'convert to Sql Query : " ' + user_ + ' "' + " : without any eplanation"
+    usr = 'convert to Sql Query : " ' + user_ + ' "' + " : without any explanation"
     gemini = genai.GenerativeModel(model_name=model)
     chat = gemini.start_chat(history=contents)
     print(usr)
