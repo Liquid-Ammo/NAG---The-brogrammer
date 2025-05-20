@@ -23,13 +23,6 @@
 
 > **Promote Accessibility**: NAG's intuitive syntax and ease of use make it a valuable tool for a wider range of programmers, including those with limited SQL knowledge.
 
-**TEAM MEMBERS-**
-
-> Lalith Adhithiya Saravanan
-
-> Rishikesh Renjit
-
-> Arjun Rajagopal
 
 **Note**: This project is an independent endeavor, and other programmers are encouraged to contribute to its development and expansion.
 
