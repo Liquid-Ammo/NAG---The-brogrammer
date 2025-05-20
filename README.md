@@ -2,7 +2,7 @@
 
 **INTRODUCTION-**
 
-> NAG is a Python-based SQL language compiler designed to offer a more accessible and intuitive alternative to traditional SQL syntax for novice programmers. Developed by Lalith Adhithiya, Rishikesh Renjit, and Arjun Rajagopal, students from Class 12 A and B at Indian Educational School Kuwait, NAG aims to streamline the process of interacting with databases within Python environments.
+> NAG is a Python-based SQL language compiler designed to offer a more accessible and intuitive alternative to traditional SQL syntax for novice programmers. NAG aims to streamline the process of interacting with databases within Python environments.
 
 **KEY FEATURES-**
 
